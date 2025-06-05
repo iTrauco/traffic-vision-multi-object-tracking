@@ -36,12 +36,22 @@ Git branches for component isolation and development:
 
 See individual branches for component progress.
 
-## Environment Setup
+Environment Setup
+Prerequisites
 
-```bash
-# Activate the existing scenario6 environment
+Anaconda or Miniconda installed
+Python 3.9+
+
+Installation
+bash# Clone the repository
+git clone https://github.com/iTrauco/traffic-vision-multi-object-tracking.git
+cd traffic-vision-multi-object-tracking
+
+# Create environment from file
+conda env create -f environment.yml
+
+# Activate the environment
 conda activate scenario6-traffic-vision
 
 # Verify environment
 python --version  # Should show Python 3.9
-```
