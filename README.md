@@ -1,57 +1,42 @@
-# Traffic Vision Multi-Object Tracking - Implementation
+# Development Branch
 
-This repository contains the implementation of core components for the traffic vision multi-object tracking system.
+This branch contains development-centric workflows for implementing components that enable end-to-end pipeline functionality not included in the scenario06 notebooks.
+
+## Overview
+
+These components and workflows are the result of several months of iterations and refinement to develop the frameworks and methodologies required to implement data science infrastructure and support applications at scale.
 
 ## Source Materials
 
 - **Case Study README**: [scenario06/traffic-vision](https://github.com/iTrauco/data-science-sad/blob/scenario06/traffic-vision/multi-object-tracking/README.md)
 - **Analysis Notebook**: [System Design & Analysis](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks)
 
-## Branch Structure
+## Branch Strategy
 
-Git branches for component isolation and development:
-- `main` - This README only
-- `dev` - Active development branch
-- `components/*` - Individual component implementations
-- `feature/*` - Feature development branches
-- `integration/*` - Combined component testing
-- `fix/*` - Bug fixes
-- `chore/*` - Maintenance tasks
-- `docs/*` - Documentation updates
-- `test/*` - Testing improvements
+- `dev` is the primary and default branch
+- Feature branches will be merged into `dev` as components are developed
 
-## Core Components
 
-| Component | Purpose | Implementation Value | Status |
-|-----------|---------|---------------------|---------|
-| Video Stream Handler | Implement frame extraction and buffering from video files | Understand video data structures and efficient frame processing | ⬜ Not Started |
-| Object Detection Wrapper | Build unified interface for YOLO/SSD model inference | Master model loading, optimization, and batch processing | ⬜ Not Started |
-| Multi-Object Tracker | Implement SORT/DeepSORT tracking algorithms | Learn object association and track management principles | ⬜ Not Started |
-| Model Compression Pipeline | Create quantization and pruning workflows | Understand deployment optimization techniques | ⬜ Not Started |
-| Performance Monitor | Build real-time metrics tracking for inference | Learn system profiling and bottleneck identification | ⬜ Not Started |
+## Purpose
 
-**Status Key:** ⬜ Not Started | 🟨 In Progress | ✅ Implemented
+This branch contains the real-world implementation of the components and systems designed in the scenario06 notebooks. The dev branch and notebooks are iteratively updated together as implementation details are refined and confirmed.
 
-## Implementation Status
+Key aspects:
+- Practical implementation of notebook designs
+- Working code for all system components
+- Integration patterns discovered during development
+- Solutions that will be documented back in the notebooks
 
-See individual branches for component progress.
+## Environment Setup
 
-Environment Setup
-Prerequisites
-
-Anaconda or Miniconda installed
-Python 3.9+
-
-Installation
-bash# Clone the repository
-git clone https://github.com/iTrauco/traffic-vision-multi-object-tracking.git
-cd traffic-vision-multi-object-tracking
-
-# Create environment from file
-conda env create -f environment.yml
-
+```bash
 # Activate the environment
 conda activate scenario6-traffic-vision
 
-# Verify environment
-python --version  # Should show Python 3.9
+# If environment doesn't exist, create from file
+conda env create -f environment.yml
+```
+
+## Note
+
+The implementations here represent practical application of the concepts analyzed in the [scenario06 notebooks](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks), evolved through real-world iteration and refinement.
