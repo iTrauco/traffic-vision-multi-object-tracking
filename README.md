@@ -4,17 +4,17 @@ This branch contains development-centric workflows for implementing components t
 
 ## Overview
 
-These components and workflows are the result of several months of iterations and refinement to develop the frameworks and methodologies required to implement data science infrastructure and support applications at scale.
+These components and workflows are the result of several months of iterations and refinement to develop the frameworks and methodologies required to implement data science infrastructure as and end-to-end pipeline.
 
 ## Source Materials
 
-- **Case Study README**: [scenario06/traffic-vision](https://github.com/iTrauco/data-science-sad/blob/scenario06/traffic-vision/multi-object-tracking/README.md)
-- **Analysis Notebook**: [System Design & Analysis](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks)
+- **Case Study README**: [Data Science SAD Repo](https://github.com/iTrauco/data-science-sad/blob/scenario06/traffic-vision/multi-object-tracking/README.md)
+- **Analysis Notebook**: [Traffic Vision Multi-Object Tracking - System Analysis and Design Proposal](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks)
 
 ## Branch Strategy
 
-- `dev` is the primary and default branch
-- Feature branches will be merged into `dev` as components are developed
+- `dev` is the primary and default branch 
+- Feature branches will be merged into `dev` as the full end-to-end pipeline evolves
 
 
 ## Purpose
@@ -39,4 +39,4 @@ conda env create -f environment.yml
 
 ## Note
 
-The implementations here represent practical application of the concepts analyzed in the [scenario06 notebooks](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks), evolved through real-world iteration and refinement.
+The implementations here represent practical application of the concepts analyzed in the [Traffic Vision Multi-Object Tracking - System Analysis and Design Proposal](https://github.com/iTrauco/data-science-sad/tree/scenario06/traffic-vision/multi-object-tracking/notebooks), evolved through real-world iteration and refinement.
